@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding:0;
+    }
+    body{
+        font-size:100%; /*16px*/        
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: #5a7670;
+    }  
+    html,body{
+        height:100%;
+    }  
+    /*
+    =====================
+        layout
+    =====================
+    */
+    #wrapper{
+        width:100%; /*960/960 = 1 *100 */
+        margin:0 auto;
+        min-height: 100%;
+        margin-bottom: 4em;        
+        overflow:auto;            
+    }    
+     #container{
+        width:90%;
+        margin:0 5%;            
+    }
+     /*
+    =====================
+        header
+    =====================
+    */
+    header,main{
+        width:100%; 
+        margin:0 auto;         
+    }  
+    /*
+    =====================
+        navigation
+    =====================
+    */
+    nav{      
+        position:fixed;
+        left: 0;
+        top:0;
+        right:0;
+        height:50px; 
+        text-align: right;
+        background-color:#5a7670;
+        z-index:4;
+    }
+    nav ul{
+        width:90%;
+        margin:0 auto;
+        list-style-type:none;       
+    }
+    ul li{
+       display: inline-block; 
+       text-align: center;     
+       border-bottom:3px inset transparent;      
+       margin-left:20px; 
+       padding:16px 15px 13px 15px; 
+    }
+    ul li a{ 
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size:0.875em; /*14/16*/
+        color:#dddddd;
+    }
+    ul li a:hover{
+        color:#ffffff;
+    }   
+    ul li:hover{
+        border-bottom:3px inset #ffffff; 
+    }
+    /*
+    =====================
+        main content
+    =====================
+    */
+    main{
+        margin-top:5%;
+        background-color:transparent;          
+    } 
+     /* portfolio div*/
+     div#portfolio{       
+        box-sizing: border-box;
+        padding:100px 10px 150px 10px;      
+        border-radius: 2px;  
+    }
+    div#portfolio div{
+        padding-top:30px;
+        padding-bottom:20px;
+    }
+    div#portfolio div img.logo-img{
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        border:4px solid #f1f1ef;
+        border-radius: 50%; 
+        max-width: 100%;        
+    }
+    .porfolio-motto{
+        font-size:4em; /*64/16*/
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 400;
+        color:#f1f1ef;
+        margin-left: auto;
+        margin-right:auto;        
+    }    
+    .main-title{
+        text-transform: capitalize;
+        font-size:4em; /*64/16*/
+        padding-bottom:30px;
+        text-align: center;       
+        color:#f1f1ef;  
+    }   
+    .containers{       
+        text-align:center;
+        position: relative;
+        padding:20px;
+        z-index:0;
+    }
+    .logo-text{
+        font-size:0.875em; /*14/16*/
+        font-weight: 700;
+        text-shadow:1px 1px; 
+        letter-spacing:10px;
+    }
+    .letterOne{
+        display: inline-block;
+        position: absolute;
+        top:20px;
+        padding-bottom: 100px;
+        transform-origin: bottom center;
+        color:#b89f5d;        
+    }
+    .letterTwo{
+        display: inline-block;
+        position: absolute;
+        top:20px;       
+        transform-origin:bottom center;
+        color:#b89f5d;
+    }
+    #letter-1{
+        transform: rotate(12deg);
+    }
+    #letter-2{
+        transform: rotate(24deg);
+    }
+    #letter-3{
+        transform: rotate(36deg);
+    }
+    #letter-4{
+        transform: rotate(48deg);
+    }
+    #letter-5{
+        transform: rotate(60deg);
+    }
+    #letter-6{
+        transform: rotate(72deg);
+    }
+    #letter-7{
+        transform: rotate(84deg);
+    }
+    #letter-8{
+        transform: rotate(96deg);
+    }
+    #letter-9{
+        transform: rotate(108deg);
+    }
+    #letter-10{
+        transform: rotate(120deg);
+    }
+    #letter-11{
+        transform: rotate(132deg);
+    }
+    #letter-12{
+        transform: rotate(-132deg);
+        padding-bottom: 112px;
+    }
+    #letter-13{
+        transform: rotate(-120deg);
+        padding-bottom: 112px;
+    }
+    #letter-14{
+        transform: rotate(-108deg);
+        padding-bottom: 114px;
+    }
+    #letter-15{
+        transform: rotate(-96deg);
+        padding-bottom: 115px;
+    }
+    #letter-16{
+        transform: rotate(-84deg);
+        padding-bottom: 116px;
+    }
+    #letter-17{
+        transform: rotate(-72deg);
+        padding-bottom: 120px;
+    }
+    #letter-18{
+        transform: rotate(-60deg);
+        padding-bottom: 120px;
+    }
+    #letter-19{
+        transform: rotate(-48deg);
+        padding-bottom: 130px;
+    }
+    #letter-20{
+        transform: rotate(-36deg);
+        padding-bottom: 138px;
+    }
+    #letter-21{
+        transform: rotate(-24deg);
+        padding-bottom: 140px;
+    }
+    #letter-22{
+        transform: rotate(-12deg);
+        padding-bottom: 140px;
+    }
+    /* about div*/
+    div#about{
+        box-sizing: border-box;
+        padding:100px 10px 300px 10px;      
+        border-radius: 2px;  
+    } 
+    div#about p{
+        text-align:center;
+        color:#f1f1ef;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        font-weight:300;
+    }
+    .btn-resume{
+        font-size:0.8em;
+        box-sizing: border-box;
+        border:1px solid #000000;
+        background-color: #000000;
+        color:#f1f1ef;      
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 4px;
+        padding:4px 6px;
+        position: relative;      
+    }
+    .btn-resume:hover{
+        color:#ffffff;
+    }
+    
+    /* project div*/
+    div#projects{
+        box-sizing: border-box;     
+        padding:100px 10px 500px 10px;         
+        border-radius: 2px;        
+    }  
+    .container {
+        position: relative;
+        width:32%;    
+        border:1px solid #dddddd;  
+        box-sizing: border-box;
+        border-radius: 4px;
+        float: left;
+        margin:1%  0.4%;
+        background-color:transparent; 
+        z-index:0;           
+    }
+    .responsive-img{       
+        max-width: 100%;
+    }
+    .container:hover .overlay{
+        opacity: 1;      
+    }
+    .overlay {
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        height:auto;
+        width:100%;
+        opacity: 0;
+        cursor: pointer;
+        transition: .5s ease;        
+        background-color: #f1f1ef;
+        border-radius: 4px;  
+        z-index: 1;        
+    }   
+    .text {      
+        color:#5a7670;
+        text-transform: capitalize;
+        font-size: 1.25em; /*20/16*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);       
+    }     
+   
+    /*
+    =====================
+        footer
+    =====================
+    */
+    footer{        
+        width:100%;
+        height:150px;
+        border-top:1px solid #f1f1ef;
+        right:0;
+        left:0;
+        bottom:0;
+        position: relative;      
+    }
+    div.contact-div , div.footer-text{
+        width:90%;
+        margin:0 5%;             
+    }
+    .contact-div form input{ 
+        display: inline-block;      
+        border-radius: 4px;
+        margin:5px auto;
+        box-sizing: border-box;        
+        padding:20px;
+    }
+    .contact-div form input:not([type="submit"]){        
+        width:35%;
+        background-color:transparent;     
+        border:1px solid #f1f1ef;
+    }
+    .contact-div form input[type='submit']{       
+        width:15%;       
+        font-size: 1em; /*16/16*/
+        color:#5a7670;
+        background-color:#f1f1ef;
+        border:1px solid #f1f1ef;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color:#f1f1ef;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:#f1f1ef;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color:#f1f1ef;
+      }
+    div.footer-text{      
+        text-align: center;
+        font-size: 0.8125em;/*13/16*/
+        box-sizing: border-box;
+        padding:30px;       
+        color:#f1f1ef;
+        letter-spacing: 1px;
+    }
+    div.footer-text span{
+        display: inline-block;
+    }
+   
+
+    /*
+    =====================
+        media queries
+    =====================
+    */
+
+    @media screen and (min-width:320px) and (max-width:500px){        
+        .container {
+            position: relative;  
+            width:99%;      
+        } 
+        nav{
+            text-align: center;
+        } 
+        ul li{
+            padding-left:6px;
+            padding-right:6px;
+        }  
+        .main-title{
+            font-size:3em;
+        }
+        .porfolio-motto{
+            font-size: 1.8em;
+        }
+        .btn-resume{
+            top:5px;
+        } 
+        .contact-div form input{ 
+            display:block;   
+        }
+        .contact-div form input:not([type="submit"]){        
+            width:90%;
+        }
+        .contact-div form input[type='submit']{       
+            width:90%;
+        } 
+        div.footer-text span{
+            display: block;
+        }   
+    }
+    @media screen and (min-width:501px) and (max-width:768px){       
+        .container {
+            position: relative;  
+            width:49%;      
+        }
+        nav{
+            text-align: center;
+        }  
+        .btn-resume{
+            top:5px;
+        }  
+        .contact-div form input{ 
+            display:block;   
+        }
+        .contact-div form input:not([type="submit"]){        
+            width:90%;
+        }
+        .contact-div form input[type='submit']{       
+            width:90%;
+        }  
+    }
+  
